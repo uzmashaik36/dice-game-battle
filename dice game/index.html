@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎲 Neon Dice Roller Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎲 Dice Roller Battle </h1>
+  <div id="dice-container">
+    <div class="dice" id="dice1">🎲</div>
+    <div class="dice" id="dice2">🎲</div>
+  </div>
+  <button onclick="rollDice()">Roll Dice</button>
+  <div class="roll-count" id="rollCount">Total Rolls: 0</div>
+  <div class="winner" id="winner"></div>
+  <div class="history" id="history">
+    <h3>Roll History</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+  <audio id="winSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
